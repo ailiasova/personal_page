@@ -1,0 +1,8 @@
+.header {
+  background: url("/app/img/main-bg.jpg") no-repeat center;
+  background-size: cover; }
+  .header .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }

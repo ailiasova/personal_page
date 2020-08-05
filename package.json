@@ -1,0 +1,11 @@
+{
+  "name": "my_page",
+  "version": "1.0.0",
+  "dependencies": {
+    "gulp-sass": "latest"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "gulp": "^4.0.2"
+  }
+}
