@@ -1,0 +1,28 @@
+.container {
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.logo {
+  background-image: url("/img/logo.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 100%;
+  min-width: 200px;
+  max-width: 500px;
+}
+
+select {
+  color: red;
+  border: none;
+}
