@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Rubik';
   src: url("/app/fonts/Rubik-Regular.ttf"); }
@@ -10,7 +11,8 @@
   font-family: 'Rubik';
   src: url("/app/fonts/Rubik-ExtraBold.ttf"); }
 
-html {
+body {
+  margin: 0;
   font-family: Rubik, sans-serif; }
 
 .container {
@@ -33,10 +35,9 @@ html {
     color: #028BED;
     padding: 6px 10px; }
     .select-wrapper #select::after {
-      content: ">";
+      content: "▾";
       margin-left: 8px;
-      display: inline-block;
-      transform: rotate(90deg); }
+      display: inline-block; }
   .select-wrapper #select-options {
     position: absolute;
     border-radius: 8px;
@@ -52,13 +53,20 @@ html {
       color: #F7DD0A; }
 
 .contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #028BED;
+  color: #F7DD0A;
+  padding: 50px 0;
   text-transform: uppercase;
   font-size: 32px; }
   .contact a {
     text-decoration: none;
     font-size: 48px;
     font-weight: bold;
-    color: #028BED; }
+    color: #F7DD0A; }
 
 .logo {
   background-image: url("/img/logo.jpg");
