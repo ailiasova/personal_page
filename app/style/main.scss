@@ -1,14 +1,79 @@
+@font-face {
+  font-family: 'Rubik';
+  src: url("/app/fonts/Rubik-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url("/app/fonts/Rubik-Light.ttf");
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url("/app/fonts/Rubik-ExtraBold.ttf");
+}
+
+html {
+  font-family: Rubik, sans-serif;
+}
+
 .container {
   nav {
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    width: 100%;
   }
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  max-width: 1400px;
+  width: 80%;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.select-wrapper {
+  cursor: pointer;
+  #select {
+    color: #028BED;
+    padding: 6px 10px;
+
+    &::after {
+      content: ">";
+      margin-left: 8px;
+      display: inline-block;
+      transform: rotate(90deg);
+    }
+  }
+
+  #select-options {
+    position: absolute;
+    border-radius: 8px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.15);
+    box-shadow: 0px 10px 30px 0px rgba(0,0,0,0.15);
+    div {
+      padding: 6px 10px;
+      color: #028BED;
+    }
+    :hover {
+      background-color: #028BED;
+      color: #F7DD0A
+    }
+  }
+}
+
+.contact {
+  text-transform: uppercase;
+  font-size: 32px;
+  a {
+    text-decoration: none;
+    font-size: 48px;
+    font-weight: bold;
+    color: #028BED;
+  }
 }
 
 .logo {
@@ -22,7 +87,28 @@
   max-width: 500px;
 }
 
-select {
-  color: red;
-  border: none;
+.header-social {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    background-color: #028BED;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    margin: 0 5px;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+
+      img {
+        fill: #fff;
+        max-height: 10px;
+      }
+    }
+  }
 }
