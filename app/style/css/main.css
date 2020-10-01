@@ -22,3 +22,68 @@
 select {
   color: red;
   border: none; }
+
+.map a path {
+  transition: fill 0.2s ease-in, transform 0.2s ease-in; }
+  .map a path:hover {
+    fill: #ffdf00 !important; }
+
+.map a:nth-child(1) path {
+  fill: #3862e0; }
+
+.map a:nth-child(2) path {
+  fill: #3862e0; }
+
+.map a:nth-child(3) path {
+  fill: #214cce; }
+
+.map a:nth-child(4) path {
+  fill: #214cce; }
+
+.map a:nth-child(5) path {
+  fill: #214ed3; }
+
+.map a:nth-child(6) path {
+  fill: #2351dc; }
+
+.map a:nth-child(7) path {
+  fill: #2b58de; }
+
+.map a:nth-child(8) path {
+  fill: #345fdf; }
+
+.map a:nth-child(9) path {
+  fill: #3d66e0; }
+
+.map a:nth-child(10) path {
+  fill: #2b58de; }
+
+.map a:nth-child(11) path {
+  fill: #224fd7; }
+
+.map a:nth-child(12) path {
+  fill: #3d66e0; }
+
+.map a:nth-child(13) path {
+  fill: #214ed3; }
+
+.map a:nth-child(14) path {
+  fill: #2b58de; }
+
+.map a:nth-child(15) path {
+  fill: #2b58de; }
+
+.map a:nth-child(16) path {
+  fill: #2351dc; }
+
+.map a:nth-child(17) path {
+  fill: #3862e0; }
+
+.map a:nth-child(18) path {
+  fill: #345fdf; }
+
+.map a:nth-child(19) path {
+  fill: #214cce; }
+
+.map a:nth-child(20) path {
+  fill: #2b58de; }

@@ -1,3 +1,5 @@
+@import "map";
+
 .container {
   nav {
     display: flex;
@@ -25,4 +27,25 @@
 select {
   color: red;
   border: none;
+}
+
+.map {
+  a {
+    path {
+      transition: fill 0.2s ease-in, transform 0.2s ease-in;
+      &:hover{
+        fill: #ffdf00!important;
+      }
+    }
+  }
+}
+
+@for $i from 1 through 20 {
+  .map a {
+    &:nth-child(#{$i}) {
+      path{
+        fill: darken(#4169e1, random(10));
+      }
+    }
+  }
 }
