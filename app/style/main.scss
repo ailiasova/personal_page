@@ -126,10 +126,27 @@ body {
 
 .map {
   a {
+    g {
+      &:hover{
+        path {
+          &:last-child{
+            fill: #4169e1!important;
+          }
+        }
+      }
+    }
     path {
       transition: fill 0.2s ease-in, transform 0.2s ease-in;
-      &:hover{
-        fill: #ffdf00!important;
+
+      &:first-child{
+        &:hover{
+          fill: #ffdf00!important;
+        }
+      }
+
+      &:last-child{
+        fill: #fff!important;
+        pointer-events: none;
       }
     }
   }
