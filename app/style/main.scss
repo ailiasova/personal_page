@@ -34,11 +34,15 @@ body {
   width: 80%;
   max-width: 1800px;
   margin: 0 auto;
+
+  @media (max-width: 600px) {
+    width: 90%;
+  }
 }
 
-.select-wrapper {
+.select {
   cursor: pointer;
-  #select {
+  .select-value {
     color: #028BED;
     padding: 6px 10px;
 
@@ -49,7 +53,7 @@ body {
     }
   }
 
-  #select-options {
+  .select-options {
     position: absolute;
     border-radius: 8px;
     overflow: hidden;
@@ -74,21 +78,48 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-color:#028BED;
-  color:#F7DD0A;
+  background-color:#4169e1;
+  color: #f5f7f5;
   padding: 50px 0;
   text-transform: uppercase;
-  font-size: 32px;
-  a {
+  font-size: 22px;
+
+  &-phone{
     text-decoration: none;
     font-size: 48px;
     font-weight: bold;
-    color: #F7DD0A;
+    color: #fff700;
+
+    .icon.icon-call{
+      height: 32px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    padding: 20px 0;
+    font-size: 18px;
+  }
+}
+
+.map-header {
+  margin: 20px 0;
+  h2 {
+    margin: 0;
+
+    @media (max-width: 600px) {
+      font-size: 18px;
+    }
+  }
+
+  span {
+    @media (max-width: 600px) {
+      font-size: 14px;
+    }
   }
 }
 
 .logo {
-  background-image: url("/img/logo.jpg");
+  background-image: url("/img/logo.jpg  ");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -96,6 +127,12 @@ body {
   width: 100%;
   min-width: 200px;
   max-width: 500px;
+}
+
+.icon.icon-call{
+  height: 14px;
+  color: #fffb00;
+  display: inline-block;
 }
 
 .header-social {
@@ -124,7 +161,12 @@ body {
   }
 }
 
-.map {
+.map-container{
+  width: 100%;
+  max-width: 600px;
+}
+
+#map {
   a {
     g {
       &:hover{
@@ -140,7 +182,7 @@ body {
 
       &:first-child{
         &:hover{
-          fill: #ffdf00!important;
+          fill: #fffb00 !important;
         }
       }
 
@@ -153,7 +195,7 @@ body {
 }
 
 @for $i from 1 through 20 {
-  .map a {
+  #map a {
     &:nth-child(#{$i}) {
       path{
         fill: darken(#4169e1, random(10));
