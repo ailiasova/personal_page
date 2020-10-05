@@ -24,8 +24,12 @@ body {
   nav {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
+
+    @media (max-width: 600px) {
+      justify-content: space-around;
+    }
   }
   display: flex;
   flex-direction: column;
@@ -90,6 +94,10 @@ body {
     font-weight: bold;
     color: #fff700;
 
+    @media (max-width: 600px) {
+      font-size: 36px;
+    }
+
     .icon.icon-call{
       height: 32px;
     }
@@ -127,6 +135,11 @@ body {
   width: 100%;
   min-width: 200px;
   max-width: 500px;
+
+  @media (max-width: 600px) {
+    width: 60%;
+    height: 60px;
+  }
 }
 
 .icon.icon-call{
@@ -157,6 +170,45 @@ body {
         fill: #fff;
         max-height: 10px;
       }
+    }
+  }
+}
+
+.sale {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0;
+
+  .sale-card {
+    max-width: 400px;
+    text-align: center;
+    padding: 20px 40px;
+    border-radius: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #4169e1;
+    color: #fff700;
+    cursor: pointer;
+    -webkit-box-shadow: 6px 6px 10px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 6px 6px 10px 0px rgba(0,0,0,0.4);
+    box-shadow: 6px 6px 10px 0px rgba(0,0,0,0.4);
+
+    @media (max-width:600px) {
+      max-width: 200px;
+      padding: 15px 20px;
+      border-radius: 20px;
+    }
+  }
+
+  span {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-left: 30px;
+
+    @media (max-width:600px) {
+      font-size: 16px;
     }
   }
 }

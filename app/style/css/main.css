@@ -26,8 +26,11 @@ body {
   .container nav {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%; }
+    @media (max-width: 600px) {
+      .container nav {
+        justify-content: space-around; } }
   @media (max-width: 600px) {
     .container {
       width: 90%; } }
@@ -72,6 +75,9 @@ body {
     font-size: 48px;
     font-weight: bold;
     color: #fff700; }
+    @media (max-width: 600px) {
+      .contact-phone {
+        font-size: 36px; } }
     .contact-phone .icon.icon-call {
       height: 32px; }
   @media (max-width: 600px) {
@@ -99,6 +105,10 @@ body {
   width: 100%;
   min-width: 200px;
   max-width: 500px; }
+  @media (max-width: 600px) {
+    .logo {
+      width: 60%;
+      height: 60px; } }
 
 .icon.icon-call {
   height: 14px;
@@ -124,6 +134,38 @@ body {
         fill: #fff;
         max-height: 10px; }
 
+.sale {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0; }
+  .sale .sale-card {
+    max-width: 400px;
+    text-align: center;
+    padding: 20px 40px;
+    border-radius: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #4169e1;
+    color: #fff700;
+    cursor: pointer;
+    -webkit-box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4); }
+    @media (max-width: 600px) {
+      .sale .sale-card {
+        max-width: 200px;
+        padding: 15px 20px;
+        border-radius: 20px; } }
+  .sale span {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-left: 30px; }
+    @media (max-width: 600px) {
+      .sale span {
+        font-size: 16px; } }
+
 .map-container {
   width: 100%;
   max-width: 600px; }
@@ -140,61 +182,61 @@ body {
     pointer-events: none; }
 
 #map a:nth-child(1) path {
-  fill: #214ed3; }
+  fill: #2754dd; }
 
 #map a:nth-child(2) path {
-  fill: #214cce; }
+  fill: #3862e0; }
 
 #map a:nth-child(3) path {
-  fill: #2b58de; }
+  fill: #2f5bde; }
 
 #map a:nth-child(4) path {
-  fill: #2754dd; }
+  fill: #3862e0; }
 
 #map a:nth-child(5) path {
-  fill: #2754dd; }
+  fill: #2b58de; }
 
 #map a:nth-child(6) path {
-  fill: #2b58de; }
+  fill: #214ed3; }
 
 #map a:nth-child(7) path {
-  fill: #224fd7; }
+  fill: #214cce; }
 
 #map a:nth-child(8) path {
-  fill: #224fd7; }
+  fill: #2b58de; }
 
 #map a:nth-child(9) path {
-  fill: #2754dd; }
-
-#map a:nth-child(10) path {
-  fill: #345fdf; }
-
-#map a:nth-child(11) path {
-  fill: #2754dd; }
-
-#map a:nth-child(12) path {
-  fill: #224fd7; }
-
-#map a:nth-child(13) path {
-  fill: #2b58de; }
-
-#map a:nth-child(14) path {
-  fill: #2754dd; }
-
-#map a:nth-child(15) path {
-  fill: #224fd7; }
-
-#map a:nth-child(16) path {
-  fill: #345fdf; }
-
-#map a:nth-child(17) path {
-  fill: #2b58de; }
-
-#map a:nth-child(18) path {
-  fill: #2754dd; }
-
-#map a:nth-child(19) path {
   fill: #3d66e0; }
 
-#map a:nth-child(20) path {
+#map a:nth-child(10) path {
+  fill: #2b58de; }
+
+#map a:nth-child(11) path {
+  fill: #214cce; }
+
+#map a:nth-child(12) path {
+  fill: #2754dd; }
+
+#map a:nth-child(13) path {
+  fill: #345fdf; }
+
+#map a:nth-child(14) path {
   fill: #214ed3; }
+
+#map a:nth-child(15) path {
+  fill: #345fdf; }
+
+#map a:nth-child(16) path {
+  fill: #214ed3; }
+
+#map a:nth-child(17) path {
+  fill: #345fdf; }
+
+#map a:nth-child(18) path {
+  fill: #214ed3; }
+
+#map a:nth-child(19) path {
+  fill: #2754dd; }
+
+#map a:nth-child(20) path {
+  fill: #3862e0; }
